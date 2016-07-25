@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var something = 34;
+			var anotherThing = false;
+
+			function anotherFunction (someNumber, anotherNumber) {
+				//document.write('Inside another function ' + someNumber + anotherNumber);
+
+				var sums = someNumber * anotherNumber;
+
+				document.write('Inside the function ' + something);
+
+				//document.write('<br/>' + sums);
+
+				return sums
+			}
+
+			function boolFunction (boolVar) {
+
+				if (boolVar) {
+					document.write('It is true');
+				} else {
+					document.write('It is false');
+				}
+
+			}
+
+			function comparisonFunction (thing1, thing2) {
+				if (thing1 !== thing2) {
+					document.write('They are NOT equal');
+				} else {
+					document.write('They are equal');
+				}
+			}
+
+			function logicalOperations(thing1, thing2) {
+				if (thing1 || thing2) {
+					document.write('At least one of them is true');
+				} else {
+					document.write('Both of them are false');
+				}
+			}
+
+			function logicalOperations1(thing1) {
+				if (!thing1) {
+					document.write('That is true');
+				} else {
+					document.write('That is false');
+				}
+			}
+
+			function printArray (myArray) {
+				var len = myArray.length;
+				var i;
+
+				for (i = 0; i < len; i++) {
+					document.write('<br/>');
+					document.write(myArray[i]);
+				}
+			}
+
+		</script>
+	</head>
+
+	<body>
+
+		<p>
+			This is my awesome JavaScript code!
+
+			<br/>
+
+<!--			<script src='app.js'>
+			</script>
+-->
+			<br/>
+
+			<script type="text/javascript">
+				//anotherFunction(0.25, 5);
+
+				//document.write('<br/>');
+
+				//document.write('<br/>' + anotherFunction(1, 2));
+
+				//document.write(something);
+
+				//document.write(anotherThing);
+
+				//anotherFunction();
+
+				//boolFunction('');
+
+				//comparisonFunction(5, '5');
+
+				//logicalOperations(false, true);
+
+				//logicalOperations1(true);
+
+				var rainbowCOlors = ['red', 'orange', 5, 'blue'];
+				rainbowCOlors.push('purple');
+				printArray(rainbowCOlors);
+
+
+			</script>
+
+		</p>
+
+<!--		<script src='app.js'>
+/*			alert('Hello World');
+
+			document.write('Hello World');
+
+			console.log('Hello World');
+*/
+		</script>
+-->
+
+		<script type="text/javascript">
+		</script>
+
+	</body>
+</html>
